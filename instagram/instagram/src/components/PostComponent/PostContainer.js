@@ -1,15 +1,14 @@
 import React from 'react'
-import CommentSection from './CommentSection'
+import CommentSection from '../CommentComponent/CommentSection'
 import './PostContainer.css'
 
 
 function PostContainer (props) {
-    console.log(props)
     const {posts} = props
     return (
         <div>
-            {posts.map(post => (
-               <div className="card" key={post.id}>
+            {posts.map((post, index) => (
+               <div className="card" key={index}>
                    <div className="card-profile">
                         <img src={post.thumbnailUrl} alt={post.username} />
                         {post.username}
