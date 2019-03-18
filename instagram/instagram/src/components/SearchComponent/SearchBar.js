@@ -1,27 +1,26 @@
-import React from 'react'
-import './SearchBar.css'
+import React from "react";
+import "./SearchBar.css";
 
-function SearchBar() {
-    return (
-        <div>
-        <div className="search-bar">
-            <div className="logo-content">
-                 <i className="fab fa-instagram"></i> 
-                <img className="logo" src="/images/instagram.png" alt="logo" />
-
-            </div>
-            <form className="search">
-                <input type="text" placeholder="Search" />
-            </form>
-            <div className="menu">
-            <i className="far fa-compass"></i>
-            <i className="far fa-heart"></i>
-            <i className="far fa-user"></i>
-            </div>
+function SearchBar(props) {
+  return (
+    <div>
+      <div className="search-bar">
+        <div className="logo-content">
+          <i className="fab fa-instagram" />
+          <img className="logo" src="/images/instagram.png" alt="logo" />
         </div>
-        <hr/>
+        <div className="search">
+          <input type="text" placeholder="Search"   onChange={props.filterPosts} />
         </div>
-    )
+        <div className="menu">
+          <i className="far fa-compass" />
+          <i className="far fa-heart" />
+          <i className="far fa-user" />
+        </div>
+      </div>
+      <hr />
+    </div>
+  );
 }
 
-export default SearchBar
+export default SearchBar;
