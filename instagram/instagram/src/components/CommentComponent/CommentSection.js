@@ -25,7 +25,7 @@ class CommentSection extends React.Component {
     // 3. Create new comments array with the new comment
     const comments = [...this.state.comments, newComment]
     // 4. Set the state with the new comments array
-    this.setState({comments})
+    this.setState({comments, comment: ""})
     
   };
 
