@@ -21,7 +21,7 @@ class CommentSection extends React.Component {
     // 1. prevent default action for form
     event.preventDefault();
     // 2. Create new comment with a default user
-    const newComment = {text: this.state.comment, username: 'dxtrlws'}
+    const newComment = {text: this.state.comment, username: this.props.username}
     // 3. Create new comments array with the new comment
     const comments = [...this.state.comments, newComment]
     // 4. Set the state with the new comments array

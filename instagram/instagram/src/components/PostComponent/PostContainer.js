@@ -4,7 +4,6 @@ import "./PostContainer.css";
 import Likes from './Likes'
 
 class PostContainer extends React.Component {
-   
   render() {
     return (
       <div>
@@ -21,7 +20,7 @@ class PostContainer extends React.Component {
             <Likes likes = {post.likes} />
             </div>
             <div className="comments">
-              <CommentSection comments={post.comments} />
+              <CommentSection comments={post.comments} username={this.props.username} />
             </div>
           </div>
         ))}
