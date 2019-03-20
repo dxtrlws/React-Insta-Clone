@@ -6,7 +6,6 @@ function withAuthenticate(PostsPage, Login) {
       super(props);
       this.state = {
         isLoggedIn: false,
-        username: this.props.username
       };
     }
     componentDidMount = () => {
