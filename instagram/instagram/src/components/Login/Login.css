@@ -46,6 +46,10 @@ body {
       padding-left: 10px;
   }
 
+  .login-form input::placeholder {
+      font-weight: bold;
+  }
+
   .btn-primary {
       background-color: #007bff;
       
