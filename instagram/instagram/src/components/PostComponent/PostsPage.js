@@ -6,16 +6,18 @@ import PostContainer from "./PostContainer";
 import SearchBar from "../SearchComponent/SearchBar";
 
 class PostsPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       posts: [],
-      filteredPosts: []
+      filteredPosts: [],
+      username: ""
     };
   }
 
   componentDidMount = () => {
-    this.setState({ posts: dummyData });
+    const user = localStorage.getItem('username')
+    this.setState({ posts: dummyData, username: user });
   };
 
   filterPosts = e => {
@@ -39,6 +41,7 @@ class PostsPage extends Component {
                 ? this.state.filteredPosts
                 : this.state.posts
             }
+            username={this.state.username}
           />
         </div>
       </div>
