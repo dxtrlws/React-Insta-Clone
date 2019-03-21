@@ -1,23 +1,23 @@
 import React from "react";
+import { Header, LogoContent, Logo, Search } from "./styles";
+
 import "./SearchBar.css";
 
 function SearchBar(props) {
   return (
     <div>
-      <div className="search-bar">
-        <div className="logo-content">
-          <i className="fab fa-instagram" />
-          <img className="logo" src="/images/instagram.png" alt="logo" />
+      <Header>
+        <LogoContent>
+          <i className="fab fa-instagram headerLogo" />
+          <Logo src="/images/instagram.png" alt="logo" />
+        </LogoContent>
+        <Search type="text" placeholder="Search" onChange={props.filterPosts} />
+        <div>
+          <i className="far fa-compass headerMenu" />
+          <i className="far fa-heart headerMenu" />
+          <i className="far fa-user headerMenu" />
         </div>
-        <div className="search">
-          <input type="text" placeholder="Search"   onChange={props.filterPosts} />
-        </div>
-        <div className="menu">
-          <i className="far fa-compass" />
-          <i className="far fa-heart" />
-          <i className="far fa-user" />
-        </div>
-      </div>
+      </Header>
       <hr />
     </div>
   );
