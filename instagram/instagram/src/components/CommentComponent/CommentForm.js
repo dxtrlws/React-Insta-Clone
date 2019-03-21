@@ -1,18 +1,17 @@
 import React from "react";
-// import CommentSection from "./CommentSection"
+import { FormComment, Comment } from "./Styles";
 
 const CommentForm = props => {
   return (
-    <form className="comment-form" onSubmit={props.addNewComment}>
-      <input
+    <FormComment onSubmit={props.addNewComment}>
+      <Comment
         name="comment"
-        className="comment"
         type="text"
         placeholder="Add a comment"
         value={props.comment}
         onChange={props.commentHandler}
       />
-    </form>
+    </FormComment>
   );
 };
 
