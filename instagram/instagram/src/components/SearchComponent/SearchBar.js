@@ -1,12 +1,12 @@
 import React from "react";
-import { Header, LogoContent, LogoImage, Search } from "./styles";
+import { Header, LogoContent, LogoImage, Search, HeaderContent } from "./styles";
 
 import "./SearchBar.css";
 
 function SearchBar(props) {
   return (
-    <div>
-      <Header>
+    <Header>
+      <HeaderContent>
         <LogoContent>
           <i className="fab fa-instagram headerLogo" />
           <LogoImage src="/images/instagram.png" alt="logo" />
@@ -17,9 +17,9 @@ function SearchBar(props) {
           <i className="far fa-heart headerMenu" />
           <i className="far fa-user headerMenu" />
         </div>
-      </Header>
+      </HeaderContent>
       <hr />
-    </div>
+    </Header>
   );
 }
 

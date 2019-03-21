@@ -10,13 +10,7 @@ const ComponentFromWithAuthenticate = withAuthenticate(PostsPage, Login);
 
 class App extends Component {
   render() {
-    return (
-      <div className="container">
-        <div>
-          <ComponentFromWithAuthenticate />
-        </div>
-      </div>
-    );
+    return <ComponentFromWithAuthenticate />;
   }
 }
 

@@ -31,8 +31,11 @@ class PostsPage extends Component {
 
   render() {
     return (
+      <div>
+
+      <SearchBar filterPosts={this.filterPosts} />
       <div className="container">
-        <SearchBar filterPosts={this.filterPosts} />
+        
         <div>
           {/* if there are no filtered posts in state, then render from posts */}
           <PostContainer
@@ -44,6 +47,7 @@ class PostsPage extends Component {
             username={this.state.username}
           />
         </div>
+      </div>
       </div>
     );
   }

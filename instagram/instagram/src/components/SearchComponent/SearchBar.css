@@ -1,12 +1,13 @@
 .headerLogo {
-    font-size: 38px;
+    font-size: 28px;
     border-right: 1px solid black;
     padding-right: 20px;
     margin-right: 20px;
+    margin-top: 5px;
 }
 
 .headerMenu  {
     margin-left: 35px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: normal;
 }
