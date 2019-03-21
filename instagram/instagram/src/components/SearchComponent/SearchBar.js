@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, LogoContent, Logo, Search } from "./styles";
+import { Header, LogoContent, LogoImage, Search } from "./styles";
 
 import "./SearchBar.css";
 
@@ -9,7 +9,7 @@ function SearchBar(props) {
       <Header>
         <LogoContent>
           <i className="fab fa-instagram headerLogo" />
-          <Logo src="/images/instagram.png" alt="logo" />
+          <LogoImage src="/images/instagram.png" alt="logo" />
         </LogoContent>
         <Search type="text" placeholder="Search" onChange={props.filterPosts} />
         <div>

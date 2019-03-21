@@ -15,7 +15,7 @@ const LogoContent = styled.div`
   position: relative;
 `;
 
-const Logo = styled.img`
+const LogoImage = styled.img`
   width: 200px;
   position: absolute;
   left: 70px;
@@ -30,4 +30,4 @@ const Search = styled.input`
   text-align: center;
 `;
 
-export {Search, Logo, Header, LogoContent}
+export {Search, LogoImage, Header, LogoContent}

@@ -1,28 +1,28 @@
-.card {
+/* .card {
    margin-top: 40px;
     width: 640px;
     height: auto;
     border: 1px solid lightgray;
     
-}
+} */
 
-.card-profile {
+/* .card-profile {
     display: flex;
     align-items: center;
     height: 60px;
     padding-left: 15px;
     font-weight: bold;
-}
+} */
 
-.card-profile img {
+/* .card-profile img {
     border-radius: 50%;
     width: 35px;
     margin-right: 10px;
-}
+} */
 
-.post-img {
+/* .post-img {
     margin-bottom: 20px;
-}
+} */
 
 .card-likes {
     margin-left: 15px;
