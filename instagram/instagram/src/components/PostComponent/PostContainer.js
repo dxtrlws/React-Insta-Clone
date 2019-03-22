@@ -1,5 +1,6 @@
 import React from "react";
 import CommentSection from "../CommentComponent/CommentSection";
+import PropTypes from 'prop-types'
 import {
   Card,
   CardLikes,
@@ -35,6 +36,17 @@ class PostContainer extends React.Component {
       </div>
     );
   }
+}
+
+// Validates the props that are being passed
+PostContainer.propTypes = {
+  posts: PropTypes.array.isRequired,
+  username: PropTypes.string,
+  thumbnailUrl: PropTypes.string,
+  imageUrl: PropTypes.string,
+  likes: PropTypes.number,
+  timestamp: PropTypes.string,
+  comments: PropTypes.array
 }
 
 export default PostContainer;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 import { FormComment, Comment } from "./Styles";
 
 const CommentForm = props => {
@@ -14,5 +15,11 @@ const CommentForm = props => {
     </FormComment>
   );
 };
+
+CommentForm.propTypes = {
+  comment: PropTypes.string,
+  commentHandler: PropTypes.func,
+  addNewComment: PropTypes.func
+}
 
 export default CommentForm;

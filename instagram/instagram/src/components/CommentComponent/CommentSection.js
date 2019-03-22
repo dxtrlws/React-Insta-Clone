@@ -1,5 +1,5 @@
 import React from "react";
-// import "./CommentSection.css";
+import PropTypes from 'prop-types'
 import CommentForm from "./CommentForm";
 
 class CommentSection extends React.Component {
@@ -29,6 +29,7 @@ class CommentSection extends React.Component {
   };
 
   render() {
+    console.log(this.props)
     return (
       <>
         {this.state.comments.map((comment, index) => (
@@ -49,8 +50,10 @@ class CommentSection extends React.Component {
   }
 }
 
-CommentSection.defaultProps = {
-  username: "dxtrlws"
+CommentSection.propTypes = {
+  comments: PropTypes.arrayOf(PropTypes.object),
+  username: PropTypes.string
+
 };
 
 export default CommentSection;
