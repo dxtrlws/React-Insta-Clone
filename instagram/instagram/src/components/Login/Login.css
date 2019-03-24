@@ -1,0 +1,77 @@
+body {
+    background-color: #FAFAFA;
+    font-family: Open Sans;
+  }
+
+.login-pg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+
+}
+
+  .login-box {
+    margin-top: 100px, auto;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid lightgray;
+  }
+
+  .IG-image {
+      width: 450px;
+  }
+
+  .IG-image img {
+      width: 450px;
+  }
+
+  .login-logo {
+      width: 150px;
+  }
+
+  .login-form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  .login-form input {
+      height: 30px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      padding-left: 10px;
+  }
+
+  .login-form input::placeholder {
+      font-weight: bold;
+  }
+
+  .btn-primary {
+      background-color: #007bff;
+      
+  }
+
+  .btn {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .app-store {
+      width: 300px;
+  }
+
